@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -152,5 +154,29 @@ a:focus {
   /*--QUITAR SOMBREADO----*/
   border-radius: 2.3px;
   cursor: pointer;
+}
+
+/*------SECCION TIENDA | APLICAMOS GRIDS----------*/
+.imagenGaleria {
+  width: 100%;
+  height: 100%;
+  /*TAMAÑO*/
+}
+
+.imagenGaleria:hover {
+  -webkit-filter: contrast(90%);
+          filter: contrast(90%);
+  /*SE PONE GRIS*/
+  z-index: 6;
+}
+
+.gridPrincipal {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+      grid-template-areas: "imagenUno imagenDos imagenTres" "imagenCuatro imagenCinco imagenSeis";
 }
 /*# sourceMappingURL=estilos.css.map */
