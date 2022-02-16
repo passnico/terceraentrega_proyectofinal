@@ -1,0 +1,35 @@
+/*-----------NAVBAR--------------*/
+.header__nav {
+    margin-right: 23px;
+}
+ 
+.header__nav ul li {
+    display: inline-block;
+    margin-left: 23px;
+}
+ 
+.header__nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase; /*---MAYUSCULAS----*/
+    font-weight: bold; /*---NEGRITA----*/
+    color: rgb(61, 57, 49);
+}
+ 
+.logo {
+    margin-left: 20px;
+    font-size: 5px;
+    max-width: 30px;
+}
+ 
+a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+ 
+.imagenEncabezado {
+    width: 100%; /*--FULL RESPONSIVE | QUE OCUPE EL 100% DE LA PANTALLA--*/
+}
