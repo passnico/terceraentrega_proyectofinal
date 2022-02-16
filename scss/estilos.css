@@ -179,4 +179,66 @@ a:focus {
       grid-template-rows: auto auto;
       grid-template-areas: "imagenUno imagenDos imagenTres" "imagenCuatro imagenCinco imagenSeis";
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*-------VISTA DESDE CELULAR---------*/
+@media only screen and (max-width: 597px) {
+  .gridPrincipal {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "imagenUno" "imagenDos" "imagenTres" "imagenCuatro" "imagenCinco" "imagenSeis";
+    /*UNO DEBAJO DEL OTRO*/
+  }
+  .imagenUno {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: imagenUno;
+  }
+  .imagenDos {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: imagenDos;
+  }
+  .imagenTres {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: imagenTres;
+  }
+  .imagenCuatro {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: imagenCuatro;
+  }
+  .imagenCinco {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: imagenCinco;
+  }
+  .imagenSeis {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: imagenSeis;
+  }
+  /*-------VISTA EN TABLET-------*/
+}
+
+@media only screen and (max-width: 597px) and (min-width: 600px) and (max-width: 1023px) {
+  .gridPrincipal {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "imagenUno imagenDos" "imagenTres imagenCuatro" "imagenCinco imagenSeis";
+    /*DOS POR FILA*/
+  }
+}
 /*# sourceMappingURL=estilos.css.map */
