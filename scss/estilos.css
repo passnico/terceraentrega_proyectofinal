@@ -35,9 +35,9 @@
 
 .logo {
   margin-left: 20px;
-  font-size: 5px;
-  width: 60px;
-  height: 60px;
+  font-size: 50px;
+  max-width: 150px;
+  height: 150px;
 }
 
 a {
@@ -75,7 +75,6 @@ header {
 
 /* SECCION FOOTER */
 footer {
-  padding-left: 0%;
   background-color: #dbdfc9;
   width: 100%;
   height: 100%;
@@ -89,8 +88,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-          
-        
 }
 
 footer ul li {
@@ -108,8 +105,6 @@ footer ul li a {
 footer h4 {
   color: #444b44;
 }
-footer h3 {
-font-size:0.4cm}
 
 /*------CONOCENOS--------*/
 .contenedor {
@@ -183,8 +178,7 @@ a:focus {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
-      grid-template-areas: "imagenUno imagenDos imagenTres"
- "imagenCuatro imagenCinco imagenSeis";
+      grid-template-areas: "imagenUno imagenDos imagenTres" "imagenCuatro imagenCinco imagenSeis";
 }
 
 body {
@@ -192,7 +186,7 @@ body {
 }
 
 /*-------VISTA DESDE CELULAR---------*/
-@media only screen and (max-width: 597px) {
+@media only screen and (max-width: 599px) {
   .gridPrincipal {
     display: -ms-grid;
     display: grid;
@@ -200,12 +194,7 @@ body {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto auto auto auto auto auto;
         grid-template-rows: auto auto auto auto auto auto;
-        grid-template-areas: "imagenUno"
-                              "imagenDos"
-                              "imagenTres"
-                              "imagenCuatro"
-                              "imagenCinco"
-                              "imagenSeis";
+        grid-template-areas: "imagenUno" "imagenDos" "imagenTres" "imagenCuatro" "imagenCinco" "imagenSeis";
     /*UNO DEBAJO DEL OTRO*/
   }
   .imagenUno {
@@ -241,7 +230,7 @@ body {
   /*-------VISTA EN TABLET-------*/
 }
 
-@media only screen and (max-width: 597px) and (min-width: 600px) and (max-width: 1023px) {
+@media only screen and (max-width: 599px) and (min-width: 600px) and (max-width: 1023px) {
   .gridPrincipal {
     display: -ms-grid;
     display: grid;
@@ -249,9 +238,7 @@ body {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto auto auto auto;
         grid-template-rows: auto auto auto auto;
-        grid-template-areas: "imagenUno imagenDos"
-                            "imagenTres imagenCuatro"
-                            "imagenCinco imagenSeis";
+        grid-template-areas: "imagenUno imagenDos" "imagenTres imagenCuatro" "imagenCinco imagenSeis";
     /*DOS POR FILA*/
   }
 }
