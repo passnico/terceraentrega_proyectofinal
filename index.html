@@ -9,6 +9,9 @@
     <link rel="shortcut icon" href="img/logo-header.png">
     <!--Linkeo con CSS-->
     <link rel="stylesheet" href="scss/estilos.css">
+    <link rel="stylesheet" href="scss/estilos.scss">
+
+    <link rel="stylesheet" href="./css-bt/bootstrap.min.css">
 
     <!--Posicionamiento SEO-->
     <meta name="author" content="Nicolas Passini">
@@ -30,7 +33,8 @@
 </head>
 
 <body>
-    
+    <!--SCRIPT para BS-->
+        <script src="./js-bt/bootstrap.min.js"></script>
     <!--SCRIPT para instalar iconos-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -71,17 +75,16 @@
                     </div>
                 </div>
             </nav>
+
+            <div class="contenedorImagen">
+                <img class="imagenEncabezado" src="img/imagen-encabezado.png" alt="">
+            </div>
     </header>
     
     <!--Sección "Conocenos"-->
     <section id="conocenos">
-
-        <div class="contenedorImagen">
-            <img class="imagenEncabezado" src="img/imagen-encabezado.png" alt="">
-        </div>
-
         <div class="contenedor">
-            <h2>Conocenos</h2>
+            <h2><a href="/html/conocenos.html">Conocenos</a></h2>
             <p> Somos la <b>primera tienda especializada en tecnología de la Argentina</b> con más de 22 años en el mercado y, por ello, tenemos el compromiso de ofrecerte la tecnología más innovadora brindándote una experiencia de compra única.
             </p>
             <p>
@@ -116,13 +119,14 @@
 
 <footer class="footer">
     <div class="footer__datos">
-        <p>¡Seguinos en las redes sociaales!
-            Buscanos en <a href="https:/instagram.com">Instagram</a>
+        <p>¡Podes escribirnos por email!
             <br>
-            Buscanos en <a href="https:/twitter.com">Twitter</a> 
+            info@tiendaelektro.com.ar
+            ventas@tiendaelektro.com.ar
             <br>
-            Buscanos en <a href="https:/facebook.com">Facebook</a> 
-        </p>
+            ¡También podes acercarte a nuestro local!
+            <br>
+            Av. Chacabuco 1472 - Local 2
     </div>
     <div>
         <img src="img/logo-header.png" alt="logo tienda" class="footer__logo">
